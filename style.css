@@ -1,48 +1,153 @@
+/* tudo */
 * {
- margin: 0;
- padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
+/* corpo */
 body {
   display: flex;
   flex-direction: column;
   height: 100%;
   min-height: 100vh;
-  margin: 0;
 }
+
+/* cabeçalho */
 
 header {
   display: flex;
   justify-content: space-between;
-  background-color: #3A342F;
-  color: #E8C38E;
+  align-items: center;
+  background-color:#292421;
+  color: white;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 3%;
+  padding-right: 4%;
 }
 
-header h1 {
-  margin-left: 3%;
-  margin-right: 3%;
+header nav ul {
+  display: flex;
+  gap: 55px;
+  list-style-type: none;
+  font-size: 19px;
+  font-weight: bolder;
+  color: rgb(148, 54, 0);
 }
+
+header nav a:hover {
+  color: rgb(148, 54, 0);
+  transition: 0.5s;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+/* conteúdo principal*/
 
 main {
+  flex: 1;
   display: flex;
   flex-direction: row;
-  flex: 1;
-  background-color: #E8C38E;
+  background-color: #292421;
+  color: white;
 }
 
-.textos {
+main img {
+  flex: 1;
+}
+
+main .textos {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  align-content: center;
   align-items: center;
-  justify-items: center;
 }
+
+.textos .promocao {
+  width: 80%;
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+}
+
+.textos .promocao h1 {
+  font-weight: bolder;
+  text-align: center;
+  margin: 15px;
+  border-bottom: solid white 2px;
+}
+
+.textos .promocao ol {
+  flex: 1;
+  font-size: 25px;
+  padding-left: 9%;
+}
+
+.textos button {
+  background-color: rgb(148, 54, 0);
+  color: white;
+  border: none;
+  border-radius: 2px;
+  width: 80%;
+  height: 15%;
+  margin: 30px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.textos button a {
+  text-decoration: none;
+  color: white;
+}
+
+.textos button:hover {
+  background-color: rgb(102, 38, 0);
+  cursor: pointer;
+}
+
+.textos .imagens {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 75px;
+  width: 100%;
+  background-color: white;
+  color: black ;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.textos .imagens .card img {
+  width: 200px;
+  height: 120px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.textos .imagens .card h3,
+.textos .imagens .card p {
+  text-align: center;
+  font-weight: bold;
+}
+
+/* rodapé */
 
 footer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #3A342F;
-  color: #E8C38E;
-  padding: 10px;
+  justify-content: center;
+  padding: 5px;
+  background-color: #292421;
+  color: white;
+  font-weight: bolder;
+}
+
+/* placeholder */
+
+.placeholder {
+  background-color: white;
+  width: 100%;
 }
