@@ -96,8 +96,8 @@ main .textos {
 
 .textos .promocao ol {
   flex: 1;
-  font-size: 25px;
-  padding-left: 8%;
+  font-size: 22px;
+  padding-left: 11%;
   padding-top: 5%;
   
 }
@@ -108,7 +108,7 @@ main .textos {
   border: none;
   border-radius: 5px;
   width: 80%;
-  height: 10%;
+  height: 9%;
   margin: 50px;
   font-size: 25px;
   font-family: "Cormorant", serif;
