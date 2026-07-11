@@ -164,11 +164,46 @@ main .textos {
 
 footer {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  padding: 5px;
+  align-items: center;
+  gap: 35px;
   background-color: #292421;
   color: white;
   font-weight: bolder;
+  padding: 8px;
+}
+
+footer .txt {
+  font-size: 14px;
+  text-align: center;
+}
+
+footer .endereco p {
+  font-size: 14px;
+  text-align: center;
+}
+
+footer .imgs {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+footer .imgs .redes {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+}
+footer .imgs p {
+  font-size: 14px;
+  text-align: center;
+}
+
+footer .imgs .redes img {
+  width: 30px;
+  height: 30px;
 }
 
 /* placeholder */
