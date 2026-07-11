@@ -63,7 +63,7 @@ main {
 }
 
 main img {
-  flex: 1.2;
+  flex: 1.4;
   width: 100%;
 }
 
@@ -132,12 +132,11 @@ main .textos {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   gap: 45px;
   width: 100%;
   background-color: white;
   color: black ;
-  padding-top: 5px;
-  padding-bottom: 10px;
 }
 
 .textos .imagens .card img {
