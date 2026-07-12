@@ -62,7 +62,50 @@ main {
   color: white;
 }
 
-main img {
+/* cardapio */
+#cardapio {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #292421;
+  color: white;
+}
+
+.itens-cardapio {
+  width: 90%;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+  gap: 30px;
+}
+
+.item-cardapio {
+  color: white;
+  border: 2px solid rgb(148, 54, 0);
+  border-radius: 8px;
+  overflow: hidden;
+  background: #201c19;
+}
+
+#cardapio .itens-cardapio .item-cardapio img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.item-cardapio summary,
+.item-cardapio p {
+  text-align: center;
+  padding: 2px;
+}
+
+.item-cardapio summary {
+  border-bottom: 2px solid rgb(148, 54, 0);
+}
+
+.banner {
   flex: 1.4;
   width: 100%;
 }
@@ -208,6 +251,8 @@ footer .imgs .redes img {
 /* placeholder */
 
 .placeholder {
+  flex: 1;
   background-color: white;
-  width: 100%;
+  width: 85%;
+  height: 100%;
 }
