@@ -479,7 +479,8 @@ main{
     align-items: center;
   }
   
-  .form-contatos textarea {
+  .form-contatos textarea,
+  .form-contatos input {
     width: 100%;
   }
   
