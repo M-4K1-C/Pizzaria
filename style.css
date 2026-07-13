@@ -35,6 +35,10 @@ header h1 {
   font-size: 40px;
 }
 
+.menu-btn{
+    display:none;
+}
+
 header nav ul {
   display: flex;
   gap: 25px;
@@ -89,6 +93,12 @@ main {
   background: #201c19;
 }
 
+.item-cardapio p {
+  font-size: 17px;
+  font-weight: bolder;
+  padding: 5px;
+}
+
 #cardapio .itens-cardapio .item-cardapio img {
   width: 100%;
   height: 220px;
@@ -104,7 +114,8 @@ main {
 
 .item-cardapio summary {
   border-bottom: 4px solid rgb(148, 54, 0);
-  font-size: 22px;
+  font-size: 23px;
+  font-weight: bolder;
 }
 
 .banner {
@@ -363,4 +374,80 @@ footer .imgs .redes img {
   background-color: white;
   width: 85%;
   height: 100%;
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+header{
+        flex-direction:row;
+        align-items:center;
+    }
+
+header h1 {
+  font-size: 25px;
+}
+
+    .menu-btn{
+        display:block;
+        background:none;
+        border:none;
+        color:white;
+        font-size:35px;
+        cursor:pointer;
+    }
+
+    nav{
+        display:none;
+        width:100%;
+    }
+
+    nav.ativo{
+        display:block;
+    }
+
+    nav ul{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:15px;
+        padding:20px 0;
+    }
+
+main{
+    flex-direction: column;
+}
+
+.textos .imagens{
+    flex-direction: column;
+    gap:20px;
+}
+
+
+.itens-cardapio{
+    grid-template-columns:1fr;
+}
+
+.item-cardapio img{
+    height:220px;
+}
+
+.contatos{
+  width: 100%;
+  flex-direction: column-reverse;
+  padding: 20px 0 20px 0 ;
+}
+
+.form-contatos,
+.cartao-contato {
+  margin: auto;
+  padding: 2px;
+  width: 450px;
+}
+
+footer{
+    flex-direction: column;
+    gap:20px;
+    text-align:center;
+}
 }
