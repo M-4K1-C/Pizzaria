@@ -476,6 +476,10 @@ main{
   font-size: 20px;
 }
 
+.cartao-contato h3 {
+  padding-top: 15px;
+}
+
 footer{
     flex-direction: column;
     gap:20px;
