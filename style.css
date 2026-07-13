@@ -28,6 +28,7 @@ header {
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
+  border-bottom: 2px rgb(148, 54, 0 ) solid;
 }
 
 header h1 {
@@ -223,7 +224,7 @@ main .textos {
 }
 
 .form-contatos {
-  margin: auto;
+  margin: auto 3% auto auto;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -231,24 +232,31 @@ main .textos {
   color: black;
   width: 38%;
   max-width: 500px;
-  padding: 25px;
+  padding: 35px;
+}
+
+.cartao-contato {
+  margin: auto auto auto 3%;
 }
 
 .form-contatos input,
 .form-contatos textarea {
-  font-size: 20px;
+  font-size: 25px;
   border: 2px solid rgb(148, 54, 0);
   border-radius: 4px;
   padding: 5px;
+  font-weight: bold;
 }
 
 .form-contatos button {
   background-color: rgb(148, 54, 0);
   color: white;
-  font-size: 20px;
-  font-weight: bolder;
+  font-size: 32px;
   padding: 10px;
   border-radius: 5px;
+  font-family: "Cormorant", serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .form-contatos button:hover {
@@ -263,31 +271,32 @@ main .textos {
   font-weight: 700;
   font-style: normal;
   text-align: center;
+  margin-bottom: 15px;
 }
 
 .form-contatos h2 {
-  border-bottom: 1px solid rgb(148, 54, 0 );
+  border-bottom: 2px solid rgb(148, 54, 0 );
 }
 
 .cartao-contato h2 {
-  border-bottom: 1px solid white;
+  border-bottom: 2px solid white;
 }
 
 .cartao-contato span {
   color: rgb(148, 54, 0);
-  margin-right: 10px;
-  margin-left: 5px;
-  font-size: 25px;
+  margin-right: 8px;
+  margin-left: 35px;
+  font-size: 35px;
 }
 
 .cartao-contato p {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .cartao-contato h3 {
   text-align: center;
-  font-size: 30px;
-  padding: 30px;
+  font-size: 32px;
+  padding: 10px;
 }
 
 .cartao-contato {
@@ -296,8 +305,7 @@ main .textos {
   width: 38%;
   max-width: 500px;
   height: 100%;
-  padding: 25px;
-  margin: auto;
+  padding: 30px;
   border-radius: 8px;
 }
 
@@ -313,6 +321,7 @@ footer {
   color: white;
   font-weight: bolder;
   padding: 8px;
+    border-top: 2px rgb(148, 54, 0 ) solid;
 }
 
 footer .txt {
