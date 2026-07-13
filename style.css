@@ -472,6 +472,10 @@ main{
   padding: 20px 0 20px 0;
 }
 
+.cartao-contato span {
+  margin-left: 15px;
+}
+
 .cartao-contato p {
   font-size: 20px;
 }
