@@ -468,10 +468,25 @@ main{
 .form-contatos,
 .cartao-contato {
   padding: 2px;
-  width: 400px;
+  width: 350px;
   margin: auto;
   padding: 20px 0 20px 0;
 }
+  
+  .form-contatos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form-contatos textarea {
+    width: 100%;
+  }
+  
+  .form-contatos button {
+    width: 70%;
+  }
 
 .cartao-contato span {
   margin-left: 15px;
@@ -484,6 +499,8 @@ main{
 .cartao-contato h3 {
   padding-top: 15px;
 }
+  
+  
 
 footer{
     flex-direction: column;
