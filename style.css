@@ -389,30 +389,53 @@ header h1 {
 }
 
     .menu-btn{
-        display:block;
-        background:none;
-        border:none;
-        color:white;
-        font-size:35px;
-        cursor:pointer;
-    }
+    display:block;
+    font-size:32px;
+    background:none;
+    border:none;
+    color:white;
+    cursor:pointer;
+    z-index:1001;
+}
 
-    nav{
-        display:none;
-        width:100%;
-    }
+#menu{
+    position:fixed;
 
-    nav.ativo{
-        display:block;
-    }
+    top:0;
+    right:-260px;
 
-    nav ul{
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        gap:15px;
-        padding:20px 0;
-    }
+    width:250px;
+    height:100vh;
+
+    background:#292421;
+
+    transition:0.3s;
+
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+
+    padding-top:80px;
+
+    z-index:1000;
+}
+
+#menu.ativo{
+    right:0;
+}
+
+#menu ul{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+    list-style:none;
+}
+
+#menu a{
+    color:white;
+    text-decoration:none;
+    font-size:24px;
+}
 
 main{
     flex-direction: column;
