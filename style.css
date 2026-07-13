@@ -444,6 +444,7 @@ main{
 .textos .imagens{
     flex-direction: column;
     gap:20px;
+    padding: 15px;
 }
 
 
@@ -486,7 +487,17 @@ main{
 
 footer{
     flex-direction: column;
-    gap:20px;
+    gap:10px;
     text-align:center;
+}
+  
+  footer .txt,
+  footer .endereco p,
+  footer .imgs p{
+    font-size: 10px;
+  }
+  
+  footer .imgs .redes img {
+  padding-top: 5px;
 }
 }
